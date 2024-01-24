@@ -1,1 +1,11 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
+/*body {
+  $bg-color: darkorange;
+  background-color: $bg-color;
+}*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
