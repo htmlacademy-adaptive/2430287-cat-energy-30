@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
-    <link rel="icon" href="../source/favicon-ico-32.svg"> <!--32x32 -->
+    <link rel="icon" href="../favicon-ico-32.svg"> <!--32x32 -->
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
@@ -80,21 +80,21 @@
             </label>
             </div>
             <fieldset class="form__filter filter">
-              <h3 class="visually-hidden filter_title">Выбор варианта питания</h3>
+              <h3 class="visually-hidden filter__title">Выбор варианта питания</h3>
               <ul class="filter__list">
                 <li class="filter__item item">
                   <label class="item__control">
-                  <input class="filter__input" type="radio" name="variant-group" checked>Похудение
+                  <input class="filter__input" type="radio" name="variant-group" value="slim" checked>Похудение
                   </label>
                 </li>
                 <li class="filter__item item">
                   <label class="item__control">
-                  <input class="item__input" type="radio" name="variant-group">Набор массы
+                  <input class="item__input" type="radio" name="variant-group" value="weight">Набор массы
                   </label>
                 </li>
                 <li class="filter__item item">
                 <label class="item__control">
-                <input class="item__input" type="radio" name="variant-group">Не знаю (Нужен ваш совет)
+                <input class="item__input" type="radio" name="variant-group" value="don`t-know">Не знаю (Нужен ваш совет)
                 </label>
               </li>
             </ul>
@@ -103,20 +103,18 @@
             <h3 class="contact__title">Контактные данные (владельца кота)</h3>
             <div class="contact__email">
               <label class="contact__label" for="contact-form-email">E-mail:*</label>
-              <input class="contact__form" type="text" id="contact-form-email" name="contact-form-email" placeholder="кuklachev@gmail.com">
+              <input class="contact__form" type="text" id="contact-form-email" name="contact-form-email" placeholder="кuklachev@gmail.com" required>
               <img class="contact__icon-email" src="#" width="20" height="20" alt="иконка почты">
             </div>
             <div class="contact__phone">
               <label class="contact__label" for="contact-form-phone">Телефон:*</label>
-              <input class="contact__form" type="text" id="contact-form-phone" name="contact-form-phone" placeholder="8 (960) 900-60-90">
+              <input class="contact__form" type="text" id="contact-form-phone" name="contact-form-phone" placeholder="8 (960) 900-60-90" required>
               <img class="contact__icon-phone" src="#" width="20" height="20" alt="иконка телефона">
             </div>
           </fieldset>
           <fieldset class="form__comment comment">
             <h3 class="comment__title">Комментарий</h3>
-            <taxtarea class="comment__area" id="comment-field" rows="10">
-              <input class="comment-imput" type="text" name="comment-field" placeholder="Расскажите обо всех повадках кота">
-            </taxtarea>
+            <textarea class="comment__area" id="comment-field" rows="10"  name="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="form__additionally additionally">
             <h3 class="additionally__title">Дополнительно</h3>
