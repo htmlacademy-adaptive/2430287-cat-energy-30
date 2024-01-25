@@ -2,23 +2,40 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title> Кэт энерджи</title>
+    <title>CAT ENERGY</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
+    <link rel="icon" href="../source/favicon-ico-32.svg"> <!--32x32 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo logo" href="index.html">
-        <!-- момент с картинкой потом поправлю -->
-        <img class="logo__image logo__image--icon" src="#" width="202" height="59" alt="Логотип Кет энерджи">
-        <img class="logo__image logo__image--text" src="#" width="202" height="59" alt="Логотип Кет энерджи">
+        <!-- Логотип-картинка -->
+        <picture>
+           <!-- для desktop -->
+           <source width="70" height="59" media="(min-width: 1440px)" type="image/svg+xml" srcset="images/icons/logo-pic-desctop.svg">
+           <!-- Для tablet -->
+           <source width="60" height="50" media="(min-width: 800px)" type="image/svg+xml" srcset="images/icons/logo-pic-tablet.svg">
+							<!-- Для mobile версии -->
+							<img src="images/icons/logo-pic-mobile.svg" width="33" height="38" alt="Логотип - ссылка на главную страницу">
+        </picture>
+        <!-- Логотип-текст -->
+        <picture>
+          <!-- Для desktop -->
+          <source width="118" height="21" media="(min-width: 1440px)" type="image/svg+xml" srcset="images/icons/logo-text-desktop.svg">
+          <!-- Для tablet -->
+          <source width="101" height="18" media="(min-width: 800px)" type="image/svg+xml" srcset="images/icons/logo-text-tablet.svg">
+          <!-- Для mobile -->
+          <img src="images/icons/logo-text-mobile.svg" width="101" height="18" alt="Логотип - ссылка на главную страницу">
+        </picture>
       </a>
       <nav class="main-navigation">
         <button class="main-navigation__toggle button-toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main__vrapper">
+        <div class="main-navigation__wrapper">
           <ul class="main-navigation__list site-list">
             <li class="site-list__item">
               <a class="site-list__link site-list__link--current" href="index.html">
@@ -41,15 +58,29 @@
     </header>
     <main class="main-container">
       <section class="introduction">
+        <div class="introduction__wrapper">
         <h2 class="introduction__title">
           Функциональное питание для котов
         </h2>
         <p class="introduction__tagline">
           Занялся собой? Займись котом!
         </p>
+        <!-- Банка с кормом картинка -->
+        <picture>
+          <!-- Для desktop -->
+          <source type="image/png" media="(min-width: 1440px)" width="552" height="499" srcset="images/cat-energy-image-png-or-jpg/index-can-desktop@1x.png 1x,
+           images/cat-energy-image-png-or-jpg/index-can-desktop@2x.png 2x">
+           <!-- для table -->
+           <source type="image/png" media="(min-width: 768px)" width="709" height="609" srcset="images/cat-energy-image-png-or-jpg/index-can-tablet@1x.png 1x,
+            images/cat-energy-image-png-or-jpg/index-can-tablet@2x.png 2x">
+           <!-- для mobile -->
+           <img src="images/cat-energy-image-png-or-jpg/index-can-mobile@1x.png" srcset="images/cat-energy-image-png-or-jpg/index-can-mobile@2x.png 2x"
+           width="280" height="270" alt="Промо банки с кормом Кет энерджи">
+        </picture>
         <a class="introduction__link" href="form.html">
           Подбор программы
         </a>
+        </div>
       </section>
       <section class="nutrition">
         <div class="nutrition__wrapper">
@@ -153,13 +184,20 @@
           </h2>
           <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__subtitle">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          <img class="contacts__map" src="#" width="320" height="362" alt="Карта">
+          <!-- Временная заглушка вместо карты -->
+          <picture>
+            <source width="1440" height="400" type="image/png" media="(min-width:1440px)" srcset="images/cat-energy-image-png-or-jpg/location-desktop@1x.png 1x,
+             images/cat-energy-image-png-or-jpg/location-desktop@2x.png 2x">
+            <source width="768" height="400" type="image/png" media="(min-width:768px)" srcset="images/cat-energy-image-png-or-jpg/location-tablet@1x.png 1x,
+             images/cat-energy-image-png-or-jpg/location-tablet@2x.png 2x">
+            <img class="contacts__location" src="images/cat-energy-image-png-or-jpg/location-mobile@1x.png" srcset="images/cat-energy-image-png-or-jpg/location-mobile@2x.png 2x" width="320" height="362" alt="Расположение на карте">
+          </picture>
         </div>
       </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <a class="main-footer__logo">
+        <a class="main-footer__logo" href="index.html">
           <img class="main-footer__logo-text" src="#" width="128" height="24" alt="Логотип Кет энерджи">
         </a>
         <section class="page__footer-social social">
