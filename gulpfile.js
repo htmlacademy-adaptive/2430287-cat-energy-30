@@ -55,7 +55,7 @@ export function processStyles () {
     .pipe(postcss([
       postUrl({ assetsPath: '../' }),
       autoprefixer(),
-      // csso() Минификация css, на время отлючила для удобства
+      csso()
     ]))
     .pipe(dest(`${PATH_TO_DIST}styles`, { sourcemaps: isDevelopment }))
     .pipe(server.stream());
