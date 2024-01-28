@@ -12,24 +12,9 @@
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo logo" href="index.html">
-        <!-- Логотип-картинка -->
-        <picture>
-           <!-- для desktop -->
-           <source width="70" height="59" media="(min-width: 1440px)" type="image/svg+xml" srcset="images/icons/logo-pic-desctop.svg">
-           <!-- Для tablet -->
-           <source width="60" height="50" media="(min-width: 800px)" type="image/svg+xml" srcset="images/icons/logo-pic-tablet.svg">
-							<!-- Для mobile версии -->
-					 <img src="images/icons/logo-pic-mobile.svg" width="33" height="38" alt="Логотип - ссылка на главную страницу">
-        </picture>
-        <!-- Логотип-текст -->
-        <picture>
-          <!-- Для desktop -->
-          <source width="118" height="21" media="(min-width: 1440px)" type="image/svg+xml" srcset="images/icons/logo-text-desktop.svg">
-          <!-- Для tablet -->
-          <source width="101" height="18" media="(min-width: 800px)" type="image/svg+xml" srcset="images/icons/logo-text-tablet.svg">
-          <!-- Для mobile -->
-          <img src="images/icons/logo-text-mobile.svg" width="101" height="18" alt="Логотип - ссылка на главную страницу">
-        </picture>
+        <!-- момент с картинкой потом поправлю -->
+        <img class="logo__image logo__image--icon" src="#" width="202" height="59" alt="Логотип Кет энерджи">
+        <img class="logo__image logo__image--text" src="#" width="202" height="59" alt="Логотип Кет энерджи">
       </a>
       <nav class="main-navigation">
         <button class="main-navigation__toggle button-toggle" type="button">
@@ -57,42 +42,38 @@
       </nav>
     </header>
     <main class="main-form">
-      <div class="main-form__wrapper form">
-        <h1 class="form__title">Подбор программы</h1>
-        <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <section class="application">
-          <h2 class="application__title">Подбор программы</h2>
-          <p class="application__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-          <form class="application__form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="form__name field-group">
-              <label class="field-group__label">
-              <input class="field-group__field" type="text" name="application-name" placeholder="Барсик">Имя:*
-            </label>
-            </div>
-            <div class="form__weight field-group">
-              <label class="field-group__label">
-              <input class="field-group__field" type="text" name="application-weight" placeholder="7">Вес(кг):*
-            </label>
-            </div>
-            <div class="form__age field-group">
-              <label class="field-group__label">
-              <input class="field-group__field" type="text" name="application-age" placeholder="7">Возраст (лет)
-            </label>
-            </div>
-            <fieldset class="form__filter filter">
-              <h3 class="visually-hidden filter__title">Выбор варианта питания</h3>
-              <ul class="filter__list">
-                <li class="filter__item item">
-                  <label class="item__control">
-                  <input class="filter__input" type="radio" name="variant-group" value="slim" checked>Похудение
-                  </label>
-                </li>
-                <li class="filter__item item">
-                  <label class="item__control">
-                  <input class="item__input" type="radio" name="variant-group" value="weight">Набор массы
-                  </label>
-                </li>
-                <li class="filter__item item">
+      <h1 class="main-form__title">Подбор программы</h1>
+      <p class="main-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <section class="application">
+        <h2 class="application__title">Подбор программы</h2>
+        <p class="application__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="application__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form__name field-group">
+            <label class="form__label" for="application-name">Имя:*</label>
+            <input class="form__field" type="text" id="application-name" name="application-name" placeholder="Барсик">
+          </div>
+          <div class="form__weight field-group">
+            <label class="form__label" for="application-weight">Вес(кг):*</label>
+            <input class="form__field" type="text" id="application-weight" name="application-weight" placeholder="7">
+          </div>>
+          <div class="form__age field-group">
+            <label class="form__label" for="application-age">Возраст (лет):</label>
+            <input class="form__field" type="text" id="application-age" name="application-age" placeholder="7">
+          </div>>
+          <fieldset class="form__filter filter">
+            <h3 class="visually-hidden filter_title">Выбор варианта питания</h3>
+            <ul class="filter__list">
+              <li class="filter__item item">
+                <label class="item__control">
+                <input class="filter__input" type="radio" name="variant-group" checked>Похудение
+                </label>
+              </li>
+              <li class="filter__item item">
+                <label class="item__control">
+                <input class="item__input" type="radio" name="variant-group">Набор массы
+                </label>
+              </li>
+              <li class="filter__item item">
                 <label class="item__control">
                 <input class="item__input" type="radio" name="variant-group" value="don`t-know">Не знаю (Нужен ваш совет)
                 </label>
@@ -112,7 +93,7 @@
               <img class="contact__icon-phone" src="#" width="20" height="20" alt="иконка телефона">
             </div>
           </fieldset>
-          <fieldset class="form__comment comment">
+          <fieldse class="form__comment comment">
             <h3 class="comment__title">Комментарий</h3>
             <textarea class="comment__area" id="comment-field" rows="10"  name="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
@@ -152,14 +133,7 @@
           </h2>
           <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__subtitle">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          <picture>
-            <source width="1440" height="400" type="image/png" media="(min-width:1440px)" srcset="images/cat-energy-image-png-or-jpg/location-desktop@1x.png 1x,
-            images/cat-energy-image-png-or-jpg/location-desktop@2x.png 2x">
-            <source width="768" height="400" type="image/png" media="(min-width:768px)" srcset="images/cat-energy-image-png-or-jpg/location-tablet@1x.png 1x,
-            images/cat-energy-image-png-or-jpg/location-tablet@2x.png 2x">
-            <img class="contacts__location" src="images/cat-energy-image-png-or-jpg/location-mobile@1x.png"
-            srcset="images/cat-energy-image-png-or-jpg/location-mobile@2x.png 2x" width="320" height="362" alt="Расположение на карте">
-          </picture>
+          <img class="contacts__map" src="#" width="320" height="362" alt="Карта">
         </div>
       </section>
       </div>
