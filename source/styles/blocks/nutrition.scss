@@ -7,7 +7,7 @@
 }
 
 .nutrition__list {
-
+  list-style: none;
 }
 
 .nutrition__item {
@@ -15,9 +15,28 @@
 }
 
 .nutrition__title {
-
+  color: $color-basis;
+  font-family: $main-font;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
 }
 
 .nutrition__deskription {
+  color: var(--special_dark-grey, #444);
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 18px;
+}
 
+.nutrition__link {
+  text-decoration: none;
+  color: $color-basis;
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  &:active {
+   opacity: 0.3;
+  }
 }

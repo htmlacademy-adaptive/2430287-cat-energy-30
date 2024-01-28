@@ -1,3 +1,26 @@
 .additionally {
 
 }
+
+.additionally__title {
+  font-family: $main-font;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.additionally__list {
+  list-style: none;
+}
+
+.additionally__item {
+  color: $basic-text-color;
+  font-family: $main-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+

@@ -1,5 +1,7 @@
 .introduction {
-
+  background-color: rgba(104, 183, 56, 0.85);
+  font-family: $main-font;
+  color: $basic-white;
 }
 
 .introduction__wrapper {
@@ -7,11 +9,14 @@
 }
 
 .introduction__title {
-
+  font-size: 36px;
+  line-height: 36px;
 }
 
 .introduction__tagline {
-
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
 }
 
 .introduction__link {

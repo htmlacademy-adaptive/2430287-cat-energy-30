@@ -11,5 +11,15 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background-color: $basic-white;
+  font-family: $secondary-font;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }

@@ -7,11 +7,14 @@
 }
 
 .advantages__title {
-
+  text-align: center;
+  font-family: $main-font;
+  font-size: 36px;
+  line-height: 40px;
 }
 
 .advantages__list {
-
+  list-style: none;
 }
 
 .advantages__item {
@@ -19,7 +22,10 @@
 }
 
 .advantages__description {
-
+  color: $basic-text-color;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .advantages__item--nutrition {
