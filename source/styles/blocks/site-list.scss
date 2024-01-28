@@ -1,0 +1,27 @@
+.site-list {
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.site-list__link {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: $color-basis;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+.site-list__item{
+
+}
+
+.site-list__link--current {
+
+}
+
+
