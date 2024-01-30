@@ -5,12 +5,10 @@
 @import "./global/global.scss";
 @import "./global/fonts.scss";
 @import "./global/visually-hidden.scss";
- ;
 
 
 /* BLOCKS */
 // blocks for index.html (header, footer and contact block are repeated on all pages)
-
 @import "./blocks/page.scss";
 @import "./blocks/header.scss";
 @import "./blocks/main-header.scss";
@@ -42,9 +40,10 @@
 @import "./blocks/application.scss";
 @import "./blocks/field-group.scss";
 @import "./blocks/filter.scss";
+@import "./blocks/item.scss";
 @import "./blocks/contact.scss";
 @import "./blocks/comment.scss";
 @import "./blocks/additionally.scss";
 @import "./blocks/control.scss";
-@import "./blocks/control.scss";
 @import "./blocks/button.scss";
+

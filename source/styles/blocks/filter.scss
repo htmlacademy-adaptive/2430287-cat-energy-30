@@ -1,3 +1,14 @@
 .filter {
-
+  font-style: normal;
 }
+
+.item__control {
+  color: $basic-text-color;
+  font-family: $main-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+

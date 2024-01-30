@@ -1,3 +1,72 @@
 .example {
+  background-color: $live-example-color;
+}
 
+.example__wrapper {
+  font-style: normal;
+}
+
+.example__title {
+  text-align: center;
+  font-family: $main-font;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__description {
+  color: $basic-text-color;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__list {
+  list-style: none;
+}
+
+.example__item {
+  font-style: normal;
+}
+
+.example__subtitle {
+  text-align: center;
+  font-family: $main-font;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__text {
+  color: $basic-text-color;
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.example__item--weight {
+  font-style: normal;
+}
+
+.example__item--time {
+  font-style: normal;
+}
+
+.example__expenses {
+  text-align: center;
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__price {
+  text-align: center;
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__image-cat {
+  font-style: normal;
 }

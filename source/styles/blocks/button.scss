@@ -1,4 +1,24 @@
 .button {
+  border: none;
+  font-family: "Oswald", sans-serif;
+  background-color: $basic-green;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 10px 0px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  &:hover {
+    background-color: $basic-green-2;
+  }
+  &:active {
+    background-color: $basic-green-2;
+    color: rgba(0,0,0,0.3);
+  }
+}
+.button {
   font-family: "Oswald", sans-serif;
   background-color: $basic-green;
   color: #FFFFFF;
