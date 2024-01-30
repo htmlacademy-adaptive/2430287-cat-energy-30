@@ -1,9 +1,9 @@
 .nutrition {
-
+  font-style: normal;
 }
 
 .nutrition__wrapper {
-
+  font-style: normal;
 }
 
 .nutrition__list {
@@ -11,7 +11,7 @@
 }
 
 .nutrition__item {
-
+  font-style: normal;
 }
 
 .nutrition__title {
@@ -23,7 +23,7 @@
 }
 
 .nutrition__deskription {
-  color: var(--special_dark-grey, #444);
+  color: var(--special_dark-grey, #444444);
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 18px;
@@ -36,7 +36,8 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
   &:active {
-   opacity: 0.3;
+    opacity: 0.3;
   }
 }
