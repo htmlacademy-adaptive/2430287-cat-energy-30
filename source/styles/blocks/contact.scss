@@ -1,5 +1,5 @@
 .contact {
-
+  font-style: normal;
 }
 
 .contact__title {
@@ -9,7 +9,18 @@
   font-weight: 400;
   line-height: 26px;
 }
-.contact__label, .contact__form {
+
+.contact__label {
+  color: $basic-text-color;
+  font-family: $main-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.contact__form {
   color: $basic-text-color;
   font-family: $main-font;
   font-size: 16px;

@@ -1,22 +1,5 @@
-.additional-product {
-
-}
-
-.additional-product__wrapper {
-
-}
-
-.additional-product__title {
-  font-family: $main-font;
-  font-size: 24px;
-  line-height: 24px;
-}
-
-.additional-product__list {
-  list-style: none;
-}
-
-.additional-product__item  {
+.additional-product__item {
+  font-style: normal;
 }
 
 .additional-product__main-title {
@@ -38,7 +21,17 @@
   text-transform: uppercase;
 }
 
-.additional-product__information, .additional-product__price {
+.additional-product__information {
+  color: $basic-text-color;
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.additional-product__price {
   color: $basic-text-color;
   text-align: center;
   font-family: $secondary-font;

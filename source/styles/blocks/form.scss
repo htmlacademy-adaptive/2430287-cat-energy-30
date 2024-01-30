@@ -1,5 +1,5 @@
 .form {
-
+  font-style: normal;
 }
 
 .form__title {
@@ -32,12 +32,6 @@
   flex-shrink: 0;
   border-color: $special-dark-grey;
   outline: none;
-  &:hover {
-    border-color: $special_grey;
-  }
-  &:focus {
-    border-color: $special-dark_grey;
-  }
 }
 
 .form__description-input {
